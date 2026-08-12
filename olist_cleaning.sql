@@ -1,10 +1,10 @@
 
 -- Data Cleaning & Validation
 
-* Checked the dataset for duplicate records.
-* Validated date formats and identified potential date-format inconsistencies.
-* Checked for incorrect or invalid values that could affect the analysis.
-* Validated the data before performing the analysis.
+-- Checked the dataset for duplicate records.
+--Validated date formats and identified potential date-format inconsistencies.
+-- Checked for incorrect or invalid values that could affect the analysis.
+-- Validated the data before performing the analysis.
 
 SELECT *FROM customers;
 
