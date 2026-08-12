@@ -331,9 +331,6 @@ WHERE product_name_length <= 0
    OR product_description_length <= 0;
 
 
-
-
-
 SELECT COUNT(*),
 COUNT(seller_id) AS id,
 COUNT(seller_city)  AS city,
