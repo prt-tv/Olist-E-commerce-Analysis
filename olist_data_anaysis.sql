@@ -527,12 +527,10 @@ SELECT COUNT(DISTINCT seller_state)
 FROM sellers;
 
 SELECT
-    s.seller_id,
-    SUM(oi.price) AS total_revenue
-FROM order_items oi
-INNER JOIN sellers s
-    ON oi.seller_id = s.seller_id
-GROUP BY s.seller_id
+    seller_id,
+    SUM(price) AS total_revenue
+FROM olist_order_items_dataset
+GROUP BY seller_id
 ORDER BY total_revenue DESC
 LIMIT 10;
 
